@@ -14,7 +14,7 @@ torchrun --nproc_per_node="8" \
     src/open_r1/grpo.py \
     --output_dir "./debug" \
     --model_name_or_path 'Video-R1/Qwen2.5-VL-7B-COT-SFT' \
-    --dataset_name "./Video-R1-data/Video-R1-Holmes-16k.json" \
+    --dataset_name "./video_ktr_data/Video-R1-Holmes-16k.json" \
     --deepspeed local_scripts/zero3.json \
     --max_prompt_length 16384 \
     --max_completion_length 768 \
